@@ -27,9 +27,16 @@ public class AppConfig {
             throw new ConfigException("No se puede encontrar el archivo data/config.properties");
         }
 
-        if (!Files.exists(path)) {
-            throw new ConfigException("El archivo no existe");
+        String key = prop.getProperty("key");
+        if (key == null) {
+            throw new ConfigException("Falta la clave obligatoria");
         }
+
+        if ()
+
+
+
+
 
     }
 
